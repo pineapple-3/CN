@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <title>Debrief Creator</title>
+		<link rel="shortcut icon" type="image/jpg" href="Images/Favicon.png"/>
+		<link href="main.css" rel="stylesheet">
+		<script type="text/javascript" src="functions.js"></script>
+		<script type="text/javascript" src="allGames.js"></script>
+		<script type="text/javascript" src="allCloses.js"></script>
+		<script type="text/javascript" src="allNames.js"></script>
+
+	
+	    </head>
+<body class = "myStyle">
+	
+	<img src="Images/CodeNinjas.png" width=400 class="center">
+    <h1 class="center">Some Website</h1>
+    <form action="add_question.php" method="post" class="menu4">
+    Child Name <input type="text" id="childName" />
+	<br>
+	<br>
+	<form action="add_question.php" method="post" class="menu4">
+	Parent Name<input type="text" id="parentName" />
+	<br>
+	<br>
+	</form>
+	
+    <select id="gender" class="menu">
+	<option>Gender</option>
+    <option>Male</option>
+    <option>Female</option>  
+	<option>They</option>
+    </select>
+    <select id ="belt" onchange="selectBelt()"class="menu2">
+	<option>Belt</option>
+	<option>White</option>
+	<option>Yellow</option>
+	<option>Orange</option>
+	<option>Green</option>
+	<option>Blue</option>
+	<option>Purple</option>
+	<option>Brown</option>
+	<option>TOUR</option>
+	<option>MINECRAFT</option>
+	<option>ROBLOX</option>
+	<option>STORYTELLING</option>
+    </select>
+	<select id ="closeList" onchange="selectClose()"class="menu2">
+		<option>SELECT CLOSE</option>
+		<option>Close 1 - pleasure & persevere</option>
+		<option>Close 2 - inter skills & environment</option>
+		<option>Close 3 - lightens up dojo</option>
+		<option>Close 4 - foundational habits</option>
+		<option>Close 5 - next sensation skillset</option>
+		<option>Close 6 - above and beyond</option>
+		<option>Close 7 - creative hat</option>
+		<option>Close 8 - session of coding greatness</option>
+		<option>Close 9 - far from white</option>
+		<option>Close 10 - chattykid, small close</option>
+		<option>Close 11 - one Hard Game</option>
+		<option>Close 12 - lots of prjects+energy</option>
+		<option>Close 13 - immense focus for Game</option>
+		<option>Close 14 - Completed one long project</option>
+		<option>Close 15 - quieter day</option>
+		<option>Close 16 - Sunshine - long way from white belt</option>
+		<option>Close 17 - Game has many interesting</option>
+		<option>Close 18 - Very ideal student</option>
+		<option>Close 19 - firing on all cylinders & beaming</option>
+		<option>Close 20 - language proficiency</option>
+		<option>Close 21 - learning styles & employability</option>
+		<option>Close 22 - initiative & independence</option>
+		<option>Close 23 - learn both ways</option>
+		<option>Close 24 - prep stages</option>
+		<option>Close 25 - attention & eager short</option>
+		<option>Close 26 - experimenting</option>
+		<option>Close 27 - paid attention as i explained ____</option>
+		<option>Close 28 - adherence & age group</option>
+		<option>Close 29 - goal attainment</option>
+		<option>Close 30 - tricky debugging - simple</option>
+		<option>Close 31 - add in assets</option>
+		<option>Close 32 - hard work & picking up</option>
+		<option>Close 33 - Small Close - Polite & Engaged</option>
+		<option>Close 34 - Lizzie Close</option>
+		</select>
+		<br>
+		<br>
+		<button onclick="selectGame()"width = 100 class='center2'>Make A Debrief</button>
+	<br>
+   <br>
+   <br>
+   <p class="menu3">Game 1</p>
+   <div id="gameSelect">
+   </div>
+	<br>
+	<p class="menu3">Game 2</p>
+	<div id="gameA">
+	</div>
+	<br>
+
+	<p class="menu3">Game 3</p>
+	<div id="gameB">
+	</div>
+	<br>
+
+	<p class="menu3">Game 4<div id="gameC"></div></p>
+	<br>
+	
+	<p class="menu3">Game 5</p>
+	<div id="gameD">
+	</div>
+	<br>
+
+	<p class="menu3">Game 6</p>
+	<div id="gameE">
+	</div>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<p class="menu">Debrief</p>
+	<div = id="parent1" class="myStyle"></div>
+	<div = id="Dgame" class="myStyle"></div>
+	<div = id="Dgame2"></div>
+	<div = id="Dgame3"></div>
+	<div = id="Dgame4"></div>
+	<div = id="Dgame5"></div>
+	<div = id="Dgame6"></div>
+	<div = id="CLOSE"></div>
+	<br>
+	<br>
+	<br>
+	<div = id="nameDropL"></div>
+	<br>
+	<div = id="closesText1"></div>
+	<br>
+	<div = id="nameDropL2"></div>
+	<br>
+	<div = id="closesText2"></div>
+	<br>
+	<div = id="closeDropL"></div>
+	<br>
+	<br>
+	<br>
+	<button onclick='refresh()'class='center2'>REFRESH</button>
+	<br>
+	
+
+
+</body>
+</html>
